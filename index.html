@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid table</title>
+  </head>
+  <body>
+    <template>
+      <div class="col-lg-12 control-section"> 
+          <div>
+              <ejs-grid :dataSource="data" >
+                  <e-columns>
+                      <e-column field='1,1' textAlign='Right'></e-column>
+                      <e-column field='4'></e-column>
+                      <e-column field='7' textAlign='Right'></e-column>
+                      <e-column field='9' textAlign='Right'></e-column>
+                      
+                  </e-columns>
+              </ejs-grid>
+          </div>
+      </div>
+      </template>
+       
+      <script lang="ts">
+      import Vue from "vue";
+      import { GridPlugin } from "@syncfusion/ej2-vue-grids";
+      import { orderDetails } from "./data-source";
+       
+      Vue.use(GridPlugin);
+       
+      export default Vue.extend({
+        data: () => {
+          return {
+            data: orderDetails.slice(0, 12)
+          };
+        }
+      });
+      </script>
+  </body>
+</html>

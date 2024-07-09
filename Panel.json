@@ -1,0 +1,72 @@
+{
+  "datasource": {
+    "uid": "PD8C576611E62080A",
+    "type": "grafana-testdata-datasource"
+  },
+  "type": "table", 
+  "title": "Grid table",
+  "% input value is x which is initialized as 68 
+  x=68" 
+
+  "gridPos": {
+    "x": 4,       
+    "y": 3,                   
+    "w": 8,
+    "h": 1
+  },
+  "id": 19,
+  "targets": [
+    {
+      "scenarioId": "file",
+      "refId": "A",
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "PD8C576611E62080A"
+      },
+      "csvFileName": "Grid table."
+    }
+  ],
+  "options": {
+    "showHeader": false,
+    "cellHeight": "md",
+    "footer": {
+      "show": false,
+      "reducer": [
+        "sum"
+      ],
+      "countRows": false,
+      "fields": ""
+    }
+  },
+  "fieldConfig": {
+    "defaults": {
+      "custom": {
+        "align": "center",
+        "cellOptions": {
+          "type": "auto"
+        },
+        "inspect": false,
+        "minWidth": 76
+      },
+      "mappings": [],
+      "thresholds": {
+        "mode": "absolute",
+        "steps": [
+          {
+            "color": "green",
+            "value": null
+          },
+          {
+            "color": "red",
+            "value": 51
+          }
+        ]
+      },
+      "color": {
+        "mode": "thresholds"
+      }
+    },
+    "overrides": []
+  },
+  "pluginVersion": "11.2.0-72576"
+} 
