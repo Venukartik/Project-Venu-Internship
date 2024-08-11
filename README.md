@@ -6,4 +6,4 @@ My internship -
 and also tried to code the dashboard in the visual studio code.
 4) Also made Pie chart.
 5)  Explored Vuejs 3 
-
+6) just added 2 more commits .
